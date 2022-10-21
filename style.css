@@ -1,0 +1,29 @@
+.tools{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    position: fixed;
+    top: 90px;
+    border-right: 1px solid rgb(0, 115, 255);
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width: 1080px) {
+    .tools{
+        display: relative;
+        left:-100;
+        background-color: rgb(189, 189, 189);
+        transition:0.3s;
+        border:none;
+        border-radius: 20px;
+    }
+    .tool{
+        display: relative;
+        left:0px;
+    }
+    .menu{
+        display: block;
+    }
+}
